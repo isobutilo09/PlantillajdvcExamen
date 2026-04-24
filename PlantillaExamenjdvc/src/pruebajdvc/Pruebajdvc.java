@@ -25,6 +25,48 @@ import javax.swing.JButton;
 import java.awt.event.MouseAdapter;
 import java.awt.event.MouseEvent;
 
+
+/*
+import jakarta.persistence.*;
+
+@Entity
+public class Paciente {
+
+    @Id
+    @GeneratedValue(strategy = GenerationType.IDENTITY)
+    private int id;
+
+    private String nombre;
+    private int glucosa;
+    private int hierro;
+
+    @ManyToOne
+    @JoinColumn(name = "hospital_id")
+    private Hospital hospital;
+
+    // getters y setters
+}
+
+import jakarta.persistence.*;
+import java.util.List;
+
+@Entity
+public class Hospital {
+
+    @Id
+    @GeneratedValue(strategy = GenerationType.IDENTITY)
+    private int id;
+
+    private String nombre;
+
+    @OneToMany(mappedBy = "hospital")
+    private List<Paciente> pacientes;
+
+    // getters y setters
+}
+
+*/
+
 class ConnectionSingleton {
 	private static Connection con;
 
